@@ -29,9 +29,29 @@
 .card:hover {
     transform: scale(1.05);
 }
+   /* Default (PC) - Constrained width */
+   .video-container {
+            max-width: 800px;
+            margin: auto;
+        }
 
+        /* Mobile - Full screen with proper aspect ratio */
+        @media (max-width: 768px) {
+            .video-container {
+                width: 100vw;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
 
-    </style>
+            .video-container video {
+                width: 100%;
+                height: auto;
+                max-height: 100vh;
+            }
+        }   </style>
       
   </head>
   <body >
@@ -272,8 +292,17 @@
         </div>
     </div>
 </div>
-
-
+<div class="container" style="margin-top: 30px;">
+  <div class="row justify-content-center">
+      <div class="col-lg-10 col-md-10 col-12 video-container">
+          <video class="w-100" controls>
+              <source src="happ.mp4" type="video/mp4">
+             
+              Your browser does not support HTML video.
+          </video>
+      </div>
+  </div>
+</div>
 
 <div class="container" style="margin-top: 50px; margin-bottom: 50px; font-size: xx-large;">
 <div class="card">
