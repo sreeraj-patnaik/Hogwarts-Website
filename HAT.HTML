@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+   
+    <style>
+        body {
+          
+          background-color: rgb(1, 1, 18);
+          
+        }
+        .navbar-nav .nav-item {
+    margin-right: 10px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    transform: scale(1.05);
+}
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+      body {
+        background-color: rgb(1, 1, 18);
+        color: white;
+        text-align: center;
+      }
+      .sorting-container {
+        margin-top: 50px;
+      }
+      .house-result {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .question {
+        margin-top: 20px;
+        font-size: 1.2rem;
+      }
+      .btn-container {
+        margin-top: 20px;
+      }
+    </style>
+      
+  </head>
+  <body >
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+      <nav class="navbar navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="hogwarts.png" alt="" width="60" height="48">
+            </a>
+          </div>
+        </nav>
+<div class="container-fluid" >
+  <a class="navbar-brand" href="#" style="font-size: x-large; margin-right: 50px;">Hogwarts University</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      
+      <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="library.html">Library</a>
+        </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Departments
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 18px;;">
+          <li><a class="dropdown-item" href="C&S.html">Charms & Spells (C&S)</a></li>
+          <li><a class="dropdown-item" href="TTL.html">Transfiguration, Transpotration and Leviation (TTL)</a></li>
+          <li><a class="dropdown-item" href="DADA.html">Defence against dark arts (DADA)</a></li>
+          <li><a class="dropdown-item" href="P&A.html">Potions And Alchemy (P&A)</a></li>
+          <li><a class="dropdown-item" href="BMMS.html">Basic Magical And Medical Sciences (BMMS)</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Examinations & Certifications
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 18px;;">
+            <li><a class="dropdown-item" href="owls.html">O.W.L.S</a></li>
+            <li><a class="dropdown-item" href="newts.html">N.E.W.T.S</a></li>
+            
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Locations
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 18px;;">
+            <li><a class="dropdown-item" href="ror.html">Room Of Requirement</a></li>
+            <li><a class="dropdown-item" href="ff.html">Forbidden Forest</a></li>
+            <li><a class="dropdown-item" href="tgh.html">The Great Hall</a></li>
+            <li><a class="dropdown-item" href="qp.html">Quiddich Pitch</a></li>
+            <li><a class="dropdown-item" href="tho.html">The Headmaster's Office</a></li>
+          
+          </ul>
+        </li>
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Laboratories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 18px;;">
+              <li><a class="dropdown-item" href="pl.html">Potions Laboratory</a></li>
+              <li><a class="dropdown-item" href="apl.html">Advanced Potions Laboratory</a></li>
+              <li><a class="dropdown-item" href="aws.html">Alchemy Workshop</a></li>
+              <li><a class="dropdown-item" href="cph.html">Charms Practice Hall</a></li>
+              <li><a class="dropdown-item" href="tph.html">Transfiguration Practice Hall</a></li>
+              <li><a class="dropdown-item" href="hg.html">Herbology Greenhouses (1-5)</a></li>
+              <li><a class="dropdown-item" href="ao.html">Astronomy Observatory</a></li>
+              <li><a class="dropdown-item" href="dpr.html">Divination Practice Room</a></li>
+              <li><a class="dropdown-item" href="arr.html">Arithmancy Research Room</a></li>
+              <li><a class="dropdown-item" href="arsc.html">Ancient Runes Study Chamber</a></li>
+              <li><a class="dropdown-item" href="wlws.html">Wandlore Workshop</a></li>
+              <li><a class="dropdown-item" href="sl.html">Spellcrafting Laboratory</a></li>
+              <li><a class="dropdown-item" href="da.html">Duelling Arena</a></li>
+              <li><a class="dropdown-item" href="darc.html">Dark Arts Research Chamber (Restricted)</a></li>
+
+              <li><a class="dropdown-item" href="bmws.html">Broomstick Maintenance Workshop</a></li>
+             
+              <li><a class="dropdown-item" href="ttrl.html">Time-Turner Research Lab (Highly Restricted)</a></li>
+             
+              <li><a class="dropdown-item" href="at.html">Astronomy Tower</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Common Rooms
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 18px;;">
+            <li><a class="dropdown-item" href="gt.html">Gryffindor's Tower</a></li>
+            <li><a class="dropdown-item" href="st.html">Slytherin's Tower</a></li>
+            <li><a class="dropdown-item" href="rt.html">Raevenclaw's Tower</a></li>
+            <li><a class="dropdown-item" href="ht.html">Hufflepuff's Tower</a></li>
+            
+          </ul>
+        </li>
+        
+        
+      
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+   
+  </div>
+</div>
+</nav>
+
+</body>
+
+
+<div class="container sorting-container">
+    <h1>Welcome to the Sorting Hat Ceremony</h1>
+    <p>Answer these questions to find out which Hogwarts house you belong to!</p>
+
+    <div id="quiz">
+      <div class="question">
+        <p>1. What trait best describes you?</p>
+        <select id="q1" class="form-select">
+          <option value="Gryffindor">Bravery</option>
+          <option value="Hufflepuff">Loyalty</option>
+          <option value="Ravenclaw">Wisdom</option>
+          <option value="Slytherin">Ambition</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <p>2. Which activity do you enjoy the most?</p>
+        <select id="q2" class="form-select">
+          <option value="Gryffindor">Exploring new places</option>
+          <option value="Hufflepuff">Helping friends</option>
+          <option value="Ravenclaw">Reading and learning</option>
+          <option value="Slytherin">Winning competitions</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <p>3. Which animal do you feel connected to?</p>
+        <select id="q3" class="form-select">
+          <option value="Gryffindor">Lion</option>
+          <option value="Hufflepuff">Badger</option>
+          <option value="Ravenclaw">Eagle</option>
+          <option value="Slytherin">Snake</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <p>4. What is your biggest strength?</p>
+        <select id="q4" class="form-select">
+          <option value="Gryffindor">Courage</option>
+          <option value="Hufflepuff">Kindness</option>
+          <option value="Ravenclaw">Intelligence</option>
+          <option value="Slytherin">Determination</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <p>5. What is your biggest fear?</p>
+        <select id="q5" class="form-select">
+          <option value="Gryffindor">Being seen as a coward</option>
+          <option value="Hufflepuff">Losing loved ones</option>
+          <option value="Ravenclaw">Being ignorant</option>
+          <option value="Slytherin">Failure</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <p>6. What type of people do you admire?</p>
+        <select id="q6" class="form-select">
+          <option value="Gryffindor">Fearless leaders</option>
+          <option value="Hufflepuff">Loyal friends</option>
+          <option value="Ravenclaw">Great thinkers</option>
+          <option value="Slytherin">Powerful influencers</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <p>7. What is your ideal magical ability?</p>
+        <select id="q7" class="form-select">
+          <option value="Gryffindor">Mastering dueling spells</option>
+          <option value="Hufflepuff">Healing magic</option>
+          <option value="Ravenclaw">Mind-reading</option>
+          <option value="Slytherin">Shapeshifting</option>
+        </select>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn btn-primary btn-lg" onclick="sortHouse()">Sort Me!</button>
+      </div>
+    </div>
+
+    <div id="houseResult" class="house-result"></div>
+  </div>
+
+  <script>
+    function sortHouse() {
+      let scores = { Gryffindor: 0, Hufflepuff: 0, Ravenclaw: 0, Slytherin: 0 };
+
+      for (let i = 1; i <= 7; i++) {
+        let choice = document.getElementById("q" + i).value;
+        scores[choice]++;
+      }
+
+      let sortedHouse = Object.keys(scores).reduce((a, b) => (scores[a] > scores[b] ? a : b));
+
+      document.getElementById("houseResult").innerHTML = 
+        "The Sorting Hat has spoken! You belong in <span style='color: gold;'>" + sortedHouse + "</span>!";
+    }
+  </script>
+
+<div class="container" style="display: flex; justify-content: center; align-content: center; margin-top: 20px; margin-bottom: 20px;">
+    <div class="card" style="width: 18rem;">
+        <img src="septima.jpg" class="card-img-top" alt="...">
+        <div class="card-body" style="color: black;">
+          <h2 class="card-title">Dr. Septima Vector</h2>
+          <h4 class="card-text"> <b>Dean - Admissions </b></h4>
+          Professor Of Advanced Arithmancy, Dept of BMMS
+          
+        </div>
+      </div>
+</div>
+
+  </body>
+</html>
